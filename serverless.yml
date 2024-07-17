@@ -1,0 +1,20 @@
+service: example-serverless4-repo-failing
+
+frameworkVersion: "4"
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+
+functions:
+  hello:
+    handler: src/index.helloHandler
+    memorySize: 10240
+    timeout: 29
+    events:
+      - httpApi:
+          method: "GET"
+          path: "/hello"

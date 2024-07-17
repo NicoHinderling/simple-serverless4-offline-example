@@ -1,0 +1,20 @@
+{
+  "name": "example-backend",
+  "version": "1.0.0",
+  "description": "Example of serverless-offline not working with serverless4 in a simple npm package",
+  "author": "",
+  "license": "ISC",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.114",
+    "serverless": "^4.0.23",
+    "serverless-offline": "^13.6.0"
+  },
+  "resolutions": {
+    "serverless": "^4.1.12"
+  }
+}

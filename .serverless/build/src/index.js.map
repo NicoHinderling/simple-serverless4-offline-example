@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/index.ts"],
+  "sourcesContent": ["import { APIGatewayProxyEvent, APIGatewayProxyResult } from \"aws-lambda\";\n\nexport const helloHandler = async (\n  event: APIGatewayProxyEvent\n): Promise<APIGatewayProxyResult> => {\n  return {\n    statusCode: 200,\n    body: JSON.stringify({\n      message: \"Go Serverless v4.0! Your function executed successfully!\",\n    }),\n  };\n};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAEO,IAAM,eAAe,OAC1B,UACmC;AACnC,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU;AAAA,MACnB,SAAS;AAAA,IACX,CAAC;AAAA,EACH;AACF;",
+  "names": []
+}
